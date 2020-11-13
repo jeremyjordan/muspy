@@ -126,4 +126,4 @@ def to_event_representation(
     if use_end_of_sequence_event:
         events.append(offset_eos)
 
-    return np.array(events, np.uint16).reshape(-1, 1)
+    return np.array(events, np.int16).reshape(-1, 1)
